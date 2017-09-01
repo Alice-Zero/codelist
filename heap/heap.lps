@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="heap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="12"/>
+        <UsageCount Value="41"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\qsort\qsort.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="heap.pas"/>
+        <Caret Line="19" Column="71"/>
+      </Position1>
+      <Position2>
+        <Filename Value="heap.pas"/>
+        <Caret Line="5" Column="5"/>
+      </Position2>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="minheap.pas"/>
+        <Line Value="64"/>
+      </Item1>
+    </BreakPoints>
+    <Watches Count="11">
+      <Item1>
+        <Expression Value="heap"/>
+      </Item1>
+      <Item2>
+        <Expression Value="heap[1]"/>
+      </Item2>
+      <Item3>
+        <Expression Value="fa"/>
+      </Item3>
+      <Item4>
+        <Expression Value="son"/>
+      </Item4>
+      <Item5>
+        <Expression Value="size"/>
+      </Item5>
+      <Item6>
+        <Expression Value="size &lt;> 1"/>
+      </Item6>
+      <Item7>
+        <Expression Value="heap[fa] &lt; heap[son]"/>
+      </Item7>
+      <Item8>
+        <Expression Value="now"/>
+      </Item8>
+      <Item9>
+        <Expression Value="(heap[1].l+heap[1].r&lt;a[j].l)"/>
+      </Item9>
+      <Item10>
+        <Expression Value="(heap[1].level>a[j].level)"/>
+      </Item10>
+      <Item11>
+        <Expression Value="a[j]"/>
+      </Item11>
+    </Watches>
+  </Debugging>
+</CONFIG>

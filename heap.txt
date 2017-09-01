@@ -1,0 +1,39 @@
+procedure push(x:longint);
+var fa,son:longint;
+begin
+  inc(size);
+  heap[size]:=x;
+  son:=size;
+  fa:=son shr 1;
+  while (size<>1)and(heap[fa]>heap[son]) do
+  begin
+    heap[0]:=heap[fa];
+    heap[fa]:=heap[son];
+    heap[son]:=heap[0];
+    son:=fa;
+    fa:=son shr 1;
+  end;
+end;
+function pop:longint;
+var fa,son:longint;
+begin
+  pop:=heap[1];
+  heap[1]:=heap[size];
+  dec(size);
+  fa:=1;
+  son:=2;
+  while (son<=size) do
+  begin
+    if not((son=size)or(heap[son]<heap[son+1])) then inc(son);
+    if heap[fa]>heap[son] then
+    begin
+      heap[0]:=heap[fa];
+      heap[fa]:=heap[son];
+      heap[son]:=heap[0];
+      fa:=son;
+      son:=fa shl 1;
+    end
+    else break;
+  end;
+end;
+

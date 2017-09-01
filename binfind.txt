@@ -1,0 +1,9 @@
+function binfind(k,l,r:longint):longint;
+var m:longint;
+begin
+  m:=(l+r) shr 1;
+  if a[m].data=k then exit(m);
+  if l=r then exit(0);
+  if k<a[m].data then exit(binfind(k,l,m));
+  if k>a[m].data then exit(binfind(k,m+1,r));
+end; 
