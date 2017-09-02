@@ -1,0 +1,113 @@
+type data=record
+     key,num:longint;
+     end;
+var heap:array[0..1010000]of data;
+    pos:array[0..101000]of longint;
+    size,i,n,m:longint;
+    t:data;
+procedure push(x:data);
+var son,fa:longint;
+begin
+  inc(size);
+  son:=size;
+  heap[size]:=x;
+  pos[x.num]:=size;
+  fa:=size>>1;
+  while (son>1)and(heap[fa].key>heap[son].key) do
+  begin
+    pos[heap[fa].num]:=son;
+    pos[heap[son].num]:=fa;
+    heap[0]:=heap[fa];
+    heap[fa]:=heap[son];
+    heap[son]:=heap[0];
+    son:=fa;
+    fa:=son>>1;
+  end;
+end;
+
+function pop:data;
+var fa,son:longint;
+begin
+  pop:=heap[1];
+  heap[1]:=heap[size];
+  dec(size);
+  fa:=1;
+  son:=2;
+  while (son<=size) do
+  begin
+    if (son+1<=size)and(heap[son].key>heap[son+1].key) then inc(son);
+    if heap[fa].key>heap[son].key then
+    begin
+      pos[heap[fa].num]:=son;
+      pos[heap[son].num]:=fa;
+      heap[0]:=heap[fa];
+      heap[fa]:=heap[son];
+      heap[son]:=heap[0];
+      fa:=son;
+      son:=fa<<1;
+    end
+    else
+    break;
+  end;
+end;
+procedure update(x:data);
+var fa,son:longint;
+begin
+  if heap[pos[x.num]].key>x.key then
+  begin
+    heap[pos[x.num]].key:=x.key;
+    son:=pos[x.num];
+    fa:=son>>1;
+    while (son>1)and(heap[fa].key>heap[son].key) do
+      begin
+      pos[heap[fa].num]:=son;
+      pos[heap[son].num]:=fa;
+      heap[0]:=heap[fa];
+      heap[fa]:=heap[son];
+      heap[son]:=heap[0];
+      son:=fa;
+      fa:=son>>1;
+    end;
+  end;
+  if heap[pos[x.num]].key<x.key then
+  begin
+    heap[pos[x.num]].key:=x.key;
+    fa:=pos[x.num];
+    son:=fa<<1;
+    while (son<=size) do
+    begin
+      if (son+1<=size)and(heap[son].key>heap[son+1].key) then inc(son);
+      if heap[fa].key>heap[son].key then
+      begin
+        pos[heap[fa].num]:=son;
+        pos[heap[son].num]:=fa;
+        heap[0]:=heap[fa];
+        heap[fa]:=heap[son];
+        heap[son]:=heap[0];
+        fa:=son;
+        son:=fa<<1;
+      end
+      else
+      break;
+    end;
+  end;
+end;
+begin
+  readln(n,m);
+  for i:=1 to n do
+  begin
+    read(t.key);
+    t.num:=i;
+    push(t);
+  end;
+  for i:=1 to m do
+  begin
+    read(t.num);
+    if t.num=0 then writeln(heap[1].num,' ',heap[1].key)
+    else
+    begin
+    readln(t.key);
+    update(t);
+    end;
+  end;
+end.
