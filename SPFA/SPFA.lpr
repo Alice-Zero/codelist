@@ -1,0 +1,62 @@
+program SPFA;
+type edge=record
+     w,go,next:longint;
+     end;
+var e:array[1..505000]of edge;
+    head,dis:array[1..10100]of int64;
+    f:array[1..10100]of longint;
+    inq:array[1..10100]of boolean;
+    n,m,s,i,cnt:longint;
+
+procedure add;
+var x,y:longint;
+begin
+  inc(cnt);
+  readln(x,y,e[cnt].w);
+  e[cnt].next:=head[x];
+  e[cnt].go:=y;
+  head[x]:=cnt;
+end;
+
+function bfs(x:longint):boolean;
+var h:array[1..10100*2]of longint;
+    l,r,temp:longint;
+begin
+  l:=0;
+  r:=1;
+  h[1]:=x;
+  while r<>l do
+  begin
+    inc(l);
+    l:=(l-1)mod n + 1;
+    temp:=head[h[l]];
+    while temp<>-1 do
+    begin
+      if dis[h[l]]+e[temp].w<dis[e[temp].go] then
+      begin
+        dis[e[temp].go]:=dis[h[l]]+e[temp].w;
+        if not inq[e[temp].go] then
+        begin
+          inc(r);
+          r:=(r-1)mod n + 1;
+          h[r]:=e[temp].go;
+          inq[e[temp].go]:=true;
+          inc(f[e[temp].go]);
+        end;
+        if f[e[temp].go]>n then exit(true);
+       end;
+       temp:=e[temp].next;
+    end;
+    inq[h[l]]:=false;
+  end;
+  exit(true);
+end;
+begin
+  readln(n,m,s);
+  fillchar(head,sizeof(head),-1);
+  for i:=1 to n do dis[i]:=maxlongint;
+  dis[s]:=0;
+  for i:=1 to m do add;
+  if bfs(s) then for i:=1 to n do write(dis[i],' ')
+  else writeln('orz');
+end.

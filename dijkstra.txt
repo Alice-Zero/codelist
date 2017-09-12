@@ -1,0 +1,53 @@
+program djikstra;
+type edge=record
+     next,go,w:longint;
+     end;
+var e:array[1..505000]of edge;
+    head,dis:array[1..10100]of int64;
+    n,m,s,cnt,i,temp,x,min,t,j:longint;
+    f:array[1..10100]of boolean;
+procedure add;
+var x,y:longint;
+begin
+  inc(cnt);
+  readln(x,y,e[cnt].w);
+  e[cnt].next:=head[x];
+  e[cnt].go:=y;
+  head[x]:=cnt;
+end;
+
+begin
+  readln(n,m,s);
+  fillchar(f,sizeof(f),true);
+  for i:=1 to n do
+  begin
+    head[i]:=-1;
+    dis[i]:=maxlongint;
+  end;
+  dis[s]:=0;
+  f[s]:=false;
+  for i:=1 to m do add;
+  temp:=head[s];
+  while temp<>-1 do
+  begin
+    if dis[e[temp].go]>e[temp].w then dis[e[temp].go]:=e[temp].w;
+    temp:=e[temp].next;
+  end;
+  for i:=1 to n-1 do
+  begin
+    min:=maxlongint;
+    for j:=1 to n do if f[j]and(dis[j]<min) then
+    begin
+      min:=dis[j];
+      t:=j;
+    end;
+    f[t]:=false;
+    temp:=head[t];
+    while temp<>-1 do
+    begin
+      if dis[t]+e[temp].w<dis[e[temp].go] then dis[e[temp].go]:=dis[t]+e[temp].w;
+      temp:=e[temp].next;
+    end;
+  end;
+  for i:=1 to n do write(dis[i],' ');
+end.
