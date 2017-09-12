@@ -1,4 +1,4 @@
 *.exe
 lib/
 backup/
-*bat
+*.bat
