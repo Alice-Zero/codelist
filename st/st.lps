@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="st.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos Y="17"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="25" HistoryIndex="24">
+      <Position1>
+        <Filename Value="st.pas"/>
+        <Caret Line="6" Column="17"/>
+      </Position1>
+      <Position2>
+        <Filename Value="st.pas"/>
+        <Caret Line="2" Column="24"/>
+      </Position2>
+      <Position3>
+        <Filename Value="st.pas"/>
+        <Caret Line="24"/>
+      </Position3>
+      <Position4>
+        <Filename Value="st.pas"/>
+        <Caret Line="18" Column="35"/>
+      </Position4>
+      <Position5>
+        <Filename Value="st.pas"/>
+        <Caret Line="19"/>
+      </Position5>
+      <Position6>
+        <Filename Value="st.pas"/>
+        <Caret Line="21"/>
+      </Position6>
+      <Position7>
+        <Filename Value="st.pas"/>
+        <Caret Line="22"/>
+      </Position7>
+      <Position8>
+        <Filename Value="st.pas"/>
+        <Caret Line="6"/>
+      </Position8>
+      <Position9>
+        <Filename Value="st.pas"/>
+        <Caret Line="7"/>
+      </Position9>
+      <Position10>
+        <Filename Value="st.pas"/>
+        <Caret Line="23"/>
+      </Position10>
+      <Position11>
+        <Filename Value="st.pas"/>
+        <Caret Line="10"/>
+      </Position11>
+      <Position12>
+        <Filename Value="st.pas"/>
+        <Caret Line="11"/>
+      </Position12>
+      <Position13>
+        <Filename Value="st.pas"/>
+        <Caret Line="19"/>
+      </Position13>
+      <Position14>
+        <Filename Value="st.pas"/>
+        <Caret Line="21"/>
+      </Position14>
+      <Position15>
+        <Filename Value="st.pas"/>
+        <Caret Line="22"/>
+      </Position15>
+      <Position16>
+        <Filename Value="st.pas"/>
+        <Caret Line="6"/>
+      </Position16>
+      <Position17>
+        <Filename Value="st.pas"/>
+        <Caret Line="7"/>
+      </Position17>
+      <Position18>
+        <Filename Value="st.pas"/>
+        <Caret Line="23" Column="27"/>
+      </Position18>
+      <Position19>
+        <Filename Value="st.pas"/>
+        <Caret Line="19"/>
+      </Position19>
+      <Position20>
+        <Filename Value="st.pas"/>
+        <Caret Line="17" Column="18"/>
+      </Position20>
+      <Position21>
+        <Filename Value="st.pas"/>
+        <Caret Line="22"/>
+      </Position21>
+      <Position22>
+        <Filename Value="st.pas"/>
+        <Caret Line="3" Column="27"/>
+      </Position22>
+      <Position23>
+        <Filename Value="st.pas"/>
+        <Caret Line="15" Column="11"/>
+      </Position23>
+      <Position24>
+        <Filename Value="st.pas"/>
+        <Caret Line="17"/>
+      </Position24>
+      <Position25>
+        <Filename Value="st.pas"/>
+        <Caret Line="18"/>
+      </Position25>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="st.pas"/>
+        <Line Value="21"/>
+      </Item1>
+    </BreakPoints>
+    <Watches Count="5">
+      <Item1>
+        <Expression Value="f"/>
+      </Item1>
+      <Item2>
+        <Expression Value="k"/>
+      </Item2>
+      <Item3>
+        <Expression Value="lg(5)"/>
+      </Item3>
+      <Item4>
+        <Expression Value="f[4,2]"/>
+      </Item4>
+      <Item5>
+        <Expression Value="8-4+1"/>
+      </Item5>
+    </Watches>
+  </Debugging>
+</CONFIG>
