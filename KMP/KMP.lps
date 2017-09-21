@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="KMP.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="26" Y="21"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="KMP.pas"/>
+        <Caret Line="61" Column="16" TopLine="27"/>
+      </Position1>
+      <Position2>
+        <Filename Value="KMP.pas"/>
+        <Caret Line="12" Column="14"/>
+      </Position2>
+      <Position3>
+        <Filename Value="KMP.pas"/>
+        <Caret Line="18" Column="19" TopLine="2"/>
+      </Position3>
+      <Position4>
+        <Filename Value="KMP.pas"/>
+        <Caret Line="16" TopLine="2"/>
+      </Position4>
+      <Position5>
+        <Filename Value="KMP.pas"/>
+        <Caret Line="17" TopLine="2"/>
+      </Position5>
+      <Position6>
+        <Filename Value="KMP.pas"/>
+        <Caret Line="18" TopLine="2"/>
+      </Position6>
+      <Position7>
+        <Filename Value="KMP.pas"/>
+        <Caret Line="60" Column="5" TopLine="26"/>
+      </Position7>
+      <Position8>
+        <Filename Value="KMP.pas"/>
+        <Caret Line="43" Column="22" TopLine="26"/>
+      </Position8>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="KMP.pas"/>
+        <Line Value="61"/>
+      </Item1>
+    </BreakPoints>
+    <Watches Count="3">
+      <Item1>
+        <Expression Value="next"/>
+      </Item1>
+      <Item2>
+        <Expression Value="k"/>
+      </Item2>
+      <Item3>
+        <Expression Value="j"/>
+      </Item3>
+    </Watches>
+  </Debugging>
+</CONFIG>
