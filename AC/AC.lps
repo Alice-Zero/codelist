@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="AC.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AC"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="73"/>
+        <CursorPos X="1" Y="103"/>
+        <UsageCount Value="81"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="AC.pas"/>
+        <Caret Line="67" Column="55" TopLine="59"/>
+      </Position1>
+      <Position2>
+        <Filename Value="AC.pas"/>
+        <Caret Line="69" Column="9" TopLine="53"/>
+      </Position2>
+      <Position3>
+        <Filename Value="AC.pas"/>
+        <Caret Line="79" Column="49" TopLine="60"/>
+      </Position3>
+      <Position4>
+        <Filename Value="AC.pas"/>
+        <Caret Line="89" Column="1" TopLine="60"/>
+      </Position4>
+      <Position5>
+        <Filename Value="AC.pas"/>
+        <Caret Line="60" Column="1" TopLine="44"/>
+      </Position5>
+      <Position6>
+        <Filename Value="AC.pas"/>
+        <Caret Line="61" Column="1" TopLine="44"/>
+      </Position6>
+      <Position7>
+        <Filename Value="AC.pas"/>
+        <Caret Line="62" Column="1" TopLine="44"/>
+      </Position7>
+      <Position8>
+        <Filename Value="AC.pas"/>
+        <Caret Line="63" Column="1" TopLine="44"/>
+      </Position8>
+      <Position9>
+        <Filename Value="AC.pas"/>
+        <Caret Line="64" Column="1" TopLine="44"/>
+      </Position9>
+      <Position10>
+        <Filename Value="AC.pas"/>
+        <Caret Line="66" Column="1" TopLine="44"/>
+      </Position10>
+      <Position11>
+        <Filename Value="AC.pas"/>
+        <Caret Line="68" Column="1" TopLine="44"/>
+      </Position11>
+      <Position12>
+        <Filename Value="AC.pas"/>
+        <Caret Line="66" Column="1" TopLine="44"/>
+      </Position12>
+      <Position13>
+        <Filename Value="AC.pas"/>
+        <Caret Line="68" Column="1" TopLine="44"/>
+      </Position13>
+      <Position14>
+        <Filename Value="AC.pas"/>
+        <Caret Line="69" Column="1" TopLine="44"/>
+      </Position14>
+      <Position15>
+        <Filename Value="AC.pas"/>
+        <Caret Line="66" Column="25" TopLine="54"/>
+      </Position15>
+      <Position16>
+        <Filename Value="AC.pas"/>
+        <Caret Line="89" Column="1" TopLine="60"/>
+      </Position16>
+      <Position17>
+        <Filename Value="AC.pas"/>
+        <Caret Line="60" Column="1" TopLine="44"/>
+      </Position17>
+      <Position18>
+        <Filename Value="AC.pas"/>
+        <Caret Line="61" Column="1" TopLine="44"/>
+      </Position18>
+      <Position19>
+        <Filename Value="AC.pas"/>
+        <Caret Line="62" Column="1" TopLine="44"/>
+      </Position19>
+      <Position20>
+        <Filename Value="AC.pas"/>
+        <Caret Line="63" Column="1" TopLine="44"/>
+      </Position20>
+      <Position21>
+        <Filename Value="AC.pas"/>
+        <Caret Line="64" Column="1" TopLine="44"/>
+      </Position21>
+      <Position22>
+        <Filename Value="AC.pas"/>
+        <Caret Line="66" Column="1" TopLine="44"/>
+      </Position22>
+      <Position23>
+        <Filename Value="AC.pas"/>
+        <Caret Line="68" Column="1" TopLine="44"/>
+      </Position23>
+      <Position24>
+        <Filename Value="AC.pas"/>
+        <Caret Line="66" Column="1" TopLine="44"/>
+      </Position24>
+      <Position25>
+        <Filename Value="AC.pas"/>
+        <Caret Line="68" Column="1" TopLine="44"/>
+      </Position25>
+      <Position26>
+        <Filename Value="AC.pas"/>
+        <Caret Line="66" Column="1" TopLine="44"/>
+      </Position26>
+      <Position27>
+        <Filename Value="AC.pas"/>
+        <Caret Line="68" Column="1" TopLine="44"/>
+      </Position27>
+      <Position28>
+        <Filename Value="AC.pas"/>
+        <Caret Line="66" Column="1" TopLine="44"/>
+      </Position28>
+      <Position29>
+        <Filename Value="AC.pas"/>
+        <Caret Line="62" Column="36" TopLine="48"/>
+      </Position29>
+      <Position30>
+        <Filename Value="AC.pas"/>
+        <Caret Line="69" Column="33" TopLine="73"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="AC.pas"/>
+        <Line Value="103"/>
+      </Item1>
+    </BreakPoints>
+    <Watches Count="8">
+      <Item1>
+        <Expression Value="trie"/>
+      </Item1>
+      <Item2>
+        <Expression Value="g^"/>
+      </Item2>
+      <Item3>
+        <Expression Value="son"/>
+      </Item3>
+      <Item4>
+        <Expression Value="ac"/>
+      </Item4>
+      <Item5>
+        <Expression Value="t^"/>
+      </Item5>
+      <Item6>
+        <Expression Value="s"/>
+      </Item6>
+      <Item7>
+        <Expression Value="i"/>
+      </Item7>
+      <Item8>
+        <Expression Value="s[i]"/>
+      </Item8>
+    </Watches>
+  </Debugging>
+  <EditorMacros Count="0"/>
+</CONFIG>
