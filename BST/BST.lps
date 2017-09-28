@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="BST.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BST"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="32" Y="117"/>
+        <FoldState Value=" T0706 T3E055 piciJ29\"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="2">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="C:\Users\Administrator.SKY-20150415VIR\Desktop\project1.lpr"/>
+        <Line Value="123"/>
+      </Item1>
+      <Item2>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="C:\Users\Administrator.SKY-20150415VIR\Desktop\project1.lpr"/>
+        <Line Value="117"/>
+      </Item2>
+    </BreakPoints>
+    <Watches Count="4">
+      <Item1>
+        <Expression Value="root^"/>
+      </Item1>
+      <Item2>
+        <Expression Value="search"/>
+      </Item2>
+      <Item3>
+        <Expression Value="maxnode"/>
+      </Item3>
+      <Item4>
+        <Expression Value="minnode(root)^"/>
+      </Item4>
+    </Watches>
+  </Debugging>
+  <EditorMacros Count="0"/>
+</CONFIG>
