@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="AVL.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AVL"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="125"/>
+        <CursorPos X="11" Y="207"/>
+        <FoldState Value=" T37037 pjKiG276]95jZ08n"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="26" HistoryIndex="25">
+      <Position1>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="124" Column="9" TopLine="76"/>
+      </Position1>
+      <Position2>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="119" Column="68" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="106" Column="1" TopLine="7"/>
+      </Position3>
+      <Position4>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="66" Column="1" TopLine="86"/>
+      </Position4>
+      <Position5>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="200" Column="20" TopLine="186"/>
+      </Position5>
+      <Position6>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="111" Column="1" TopLine="44"/>
+      </Position6>
+      <Position7>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="167" Column="14" TopLine="56"/>
+      </Position7>
+      <Position8>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="166" Column="23" TopLine="181"/>
+      </Position8>
+      <Position9>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="154" Column="1" TopLine="116"/>
+      </Position9>
+      <Position10>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="199" Column="33" TopLine="181"/>
+      </Position10>
+      <Position11>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="154" Column="1" TopLine="116"/>
+      </Position11>
+      <Position12>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="163" Column="29" TopLine="124"/>
+      </Position12>
+      <Position13>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="161" Column="30" TopLine="124"/>
+      </Position13>
+      <Position14>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="158" Column="23" TopLine="124"/>
+      </Position14>
+      <Position15>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="156" Column="1" TopLine="124"/>
+      </Position15>
+      <Position16>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="185" Column="26" TopLine="177"/>
+      </Position16>
+      <Position17>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="174" Column="13" TopLine="162"/>
+      </Position17>
+      <Position18>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="199" Column="24" TopLine="183"/>
+      </Position18>
+      <Position19>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="32" Column="10" TopLine="12"/>
+      </Position19>
+      <Position20>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="193" Column="18" TopLine="180"/>
+      </Position20>
+      <Position21>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="203" Column="26" TopLine="195"/>
+      </Position21>
+      <Position22>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="207" Column="9" TopLine="195"/>
+      </Position22>
+      <Position23>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="211" Column="15" TopLine="197"/>
+      </Position23>
+      <Position24>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="210" Column="17" TopLine="197"/>
+      </Position24>
+      <Position25>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="213" Column="17" TopLine="199"/>
+      </Position25>
+      <Position26>
+        <Filename Value="AVL.pas"/>
+        <Caret Line="207" Column="3" TopLine="125"/>
+      </Position26>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="3">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="C:\Users\Administrator.SKY-20150415VIR\Desktop\project1.lpr"/>
+        <Line Value="123"/>
+      </Item1>
+      <Item2>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="C:\Users\Administrator.SKY-20150415VIR\Desktop\project1.lpr"/>
+        <Line Value="117"/>
+      </Item2>
+      <Item3>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="AVL.pas"/>
+        <Line Value="219"/>
+      </Item3>
+    </BreakPoints>
+    <Watches Count="5">
+      <Item1>
+        <Expression Value="root^"/>
+      </Item1>
+      <Item2>
+        <Expression Value="t^"/>
+      </Item2>
+      <Item3>
+        <Expression Value="x^"/>
+      </Item3>
+      <Item4>
+        <Expression Value="root^.l^"/>
+      </Item4>
+      <Item5>
+        <Expression Value="root^.r^"/>
+      </Item5>
+    </Watches>
+  </Debugging>
+  <EditorMacros Count="0"/>
+</CONFIG>
