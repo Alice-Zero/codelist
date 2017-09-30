@@ -1,0 +1,18 @@
+program generator;
+var i:longint;
+    s:string;
+    fin,fout:text;
+begin
+  randomize;
+  for i:=1 to 10 do
+  begin
+    str(i,s);
+    assign(fin,'qsort'+s+'.in');
+    assign(fout,'qsort'+s+'.out');
+    rewrite(fin);
+    rewrite(fout);
+
+    close(fin);
+    close(fout);
+  end;
+end.

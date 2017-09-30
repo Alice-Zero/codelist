@@ -1,7 +1,7 @@
 program AVL;
 type treenode=^node;
      node=record
-     key,h,hf,num:longint;
+     key,h,hf,num,size:longint;
      l,r,p:treenode;
      end;
 var root:treenode;
@@ -29,7 +29,7 @@ begin
     x:=x^.r;
   exit(x);
 end;
-function precursor(x:treenode):treenode;
+function nodeprec(x:treenode):treenode;
 var y:treenode;
 begin
   if x^.l<>nil then exit(maxnode(x^.l));
@@ -41,7 +41,7 @@ begin
   end;
   exit(y);
 end;
-function successor(x:treenode):treenode;
+function nodesucc(x:treenode):treenode;
 var y:treenode;
 begin
   if x^.r<>nil then exit(minnode(x^.r));
@@ -52,6 +52,24 @@ begin
     y:=y^.p;
   end;
   exit(y);
+end;
+function numprec(x:treenode;k:longint):treenode;
+begin
+  if x=nil then exit(x);
+  if x^.key>=k then
+    exit(numprec(x^.l,k))
+  else
+    numprec:=numprec(x^.r,k);
+  if numprec=nil then exit(x);
+end;
+function numsucc(x:treenode;k:longint):treenode;
+begin
+  if x=nil then exit(x);
+  if x^.key<=k then
+    exit(numsucc(x^.r,k))
+  else
+    numsucc:=numsucc(x^.l,k);
+  if numsucc=nil then exit(x);
 end;
 procedure transplant(u,v:treenode);
   begin
@@ -65,12 +83,15 @@ procedure transplant(u,v:treenode);
   end;
 procedure rotate(x:treenode);
   procedure calch(x:treenode);
-  var l,r:longint;
+  var hl,hr,sl,sr:longint;
   begin
-    if x^.l=nil then l:=0 else l:=x^.l^.h;
-    if x^.r=nil then r:=0 else r:=x^.r^.h;
-    x^.h:=max(l,r)+1;
-    x^.hf:=l-r;
+    if x^.l=nil then hl:=0 else hl:=x^.l^.h;
+    if x^.r=nil then hr:=0 else hr:=x^.r^.h;
+    if x^.l=nil then sl:=0 else sl:=x^.l^.size;
+    if x^.r=nil then sr:=0 else sr:=x^.r^.size;
+    x^.h:=max(hl,hr)+1;
+    x^.hf:=hl-hr;
+    x^.size:=sl+sr+x^.num;
   end;
   function LL(x:treenode):treenode;
   var y:treenode;
@@ -115,12 +136,13 @@ begin
       x:=LL(x)
     else
       x:=LR(x);
-  if x^.hf=-1 then
+  if x^.hf=-2 then
     if x^.r^.hf<=0 then
       x:=RR(x)
     else
       x:=RL(x);
-  if (x^.p<>nil)and(h<>x^.h) then rotate(x^.p);
+  if x^.p<>nil then
+    rotate(x^.p);
 end;
 procedure insert(k:longint);
 var x,y,z:treenode;
@@ -133,6 +155,7 @@ begin
     if k=x^.key then
     begin
       inc(x^.num);
+      rotate(x);
       exit;
     end;
     if k<x^.key then
@@ -146,6 +169,7 @@ begin
   z^.r:=nil;
   z^.h:=1;
   z^.num:=1;
+  z^.size:=1;
   z^.p:=y;
   if y=nil then root:=z
   else if z^.key<y^.key then
@@ -155,14 +179,14 @@ begin
   rotate(z);
 end;
 procedure delete(x:treenode);
-var y,t:treenode;
+var y:treenode;
 begin
   if x^.num<>1 then
   begin
     dec(x^.num);
+    rotate(x);
     exit;
   end;
-  t:=x^.p;
   if x^.l=nil then
     transplant(x,x^.r)
   else if x^.r=nil then
@@ -170,19 +194,13 @@ begin
   else
   begin
     y:=minnode(x^.r);
-    t:=y;
-    if y^.p<>x then
-    begin
-      t:=y^.r;
-      transplant(y,y^.r);
-      y^.r:=x^.r;
-      y^.r^.p:=y;
-    end;
-    transplant(x,y);
-    y^.l:=x^.l;
-    y^.l^.p:=y;
+    x^.key:=y^.key;
+    x^.num:=y^.num;
+    y^.num:=1;
+    delete(y);
+    exit;
   end;
-  if t<>nil then rotate(t);
+  if x^.p<>nil then rotate(x^.p);
   dispose(x);
 end;
 procedure dfs(x:treenode);
@@ -191,29 +209,44 @@ begin
   if x=nil then exit;
   dfs(x^.l);
   for i:=1 to x^.num do write(x^.key,' ');
+  //writeln(x^.key,' ',x^.num);
   dfs(x^.r);
   if x=root then writeln;
 end;
-var n,i,t,t1:longint;
+function select(x:treenode;k:longint):longint;
+var sl:longint;
+begin
+  if x^.l<>nil then sl:=x^.l^.size else sl:=0;
+  if (k>sl)and(k<=sl+x^.num) then exit(x^.key);
+  if k<=sl then
+    exit(select(x^.l,k))
+  else
+    exit(select(x^.r,k-sl-x^.num));
+end;
+function rank(x:treenode;k:longint):longint;
+var sl:longint;
+begin
+  if x^.l<>nil then sl:=x^.l^.size else sl:=0;
+  if k=x^.key then exit(1+sl);
+  if k<x^.key then
+    exit(rank(x^.l,k))
+  else
+    exit(rank(x^.r,k)+sl+x^.num);
+end;
+var n,i,opt,x,s:longint;
     g:treenode;
 begin
   root:=nil;
   readln(n);
   for i:=1 to n do
   begin
-    read(t);
-    insert(t);
+    readln(opt,x);
+    if root<>nil then s:=root^.size;
+    if opt=1 then insert(x);
+    if opt=2 then delete(search(root,x));
+    if opt=3 then writeln(rank(root,x));
+    if opt=4 then writeln(select(root,x));
+    if opt=5 then writeln(numprec(root,x)^.key);
+    if opt=6 then writeln(numsucc(root,x)^.key);
   end;
-  dfs(root);
-  {while true do
-  begin
-    read(t);
-    if t=0 then dfs(root) else
-    if t=1 then writeln(minnode(root)^.key) else
-    if t=2 then writeln(maxnode(root)^.key) else
-    read(t1);
-    if t=3 then writeln(precursor(search(root,t1))^.key);
-    if t=4 then writeln(successor(search(root,t1))^.key);
-    if t=5 then delete(search(root,t1));
-  end;}
 end.
