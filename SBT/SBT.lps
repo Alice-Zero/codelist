@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="SBT.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SBT"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="26" Y="250"/>
+        <FoldState Value=" T3703916 piXlY071 T1k70S T0kA243 T6mH01f"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="project1.lpr"/>
+        <Line Value="260"/>
+      </Item1>
+    </BreakPoints>
+    <Watches Count="3">
+      <Item1>
+        <Expression Value="root^"/>
+      </Item1>
+      <Item2>
+        <Expression Value="sl"/>
+      </Item2>
+      <Item3>
+        <Expression Value="sr"/>
+      </Item3>
+    </Watches>
+  </Debugging>
+  <EditorMacros Count="0"/>
+</CONFIG>
